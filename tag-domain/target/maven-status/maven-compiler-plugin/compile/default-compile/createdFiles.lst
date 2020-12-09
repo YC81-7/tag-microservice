@@ -1,0 +1,5 @@
+com\yc\ifav\config\DruidConfig.class
+com\yc\ifav\service\TagServiceImpl.class
+com\yc\ifav\service\TagService.class
+com\yc\ifav\dao\TagMapper.class
+com\yc\ifav\domain\TagDomain.class
