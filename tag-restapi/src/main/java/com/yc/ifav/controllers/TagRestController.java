@@ -51,8 +51,8 @@ public class TagRestController {
         });
     }
 
-    @RequestMapping(value = "/delete", method = RequestMethod.POST)
-    public CompletableFuture<String> delete(int tid) {
+    @RequestMapping(value = "/delete/{tid}", method = RequestMethod.DELETE)
+    public CompletableFuture<String> delete(@RequestParam("tid")int tid) {
         return CompletableFuture.supplyAsync(() -> {
             try {
                 int result=tagService.delete(tid);

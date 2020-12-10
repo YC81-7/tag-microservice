@@ -1,11 +1,13 @@
 package com.yc.ifav.config;
 import feign.Logger;
 import feign.auth.BasicAuthRequestInterceptor;
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class FeignClientConfig {
+
 
     //加入安全配置
     @Bean
